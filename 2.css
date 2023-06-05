@@ -1,0 +1,212 @@
+body{
+	background: url("bg.jpg");
+	backgroung-size:cover;
+	background-repeat:round;
+	background-attachment:fixed;
+}
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+	border-bottom: double white 1px;
+	/*border-radius:30px;*/
+	background-color:rgba(0,0,0,0.5);
+}
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+	font-family:"宋体";
+    font-size: 30px;
+    font-weight: bold;
+	height:30px;
+	color:#FFF;
+}
+
+.navbar-brandE {
+	font-family:"Times New Roman";
+    font-size: 15px;
+	font-weight:700;
+	/*color:#FFF;*/
+	text-align: center;
+}
+.font-special {
+    font-family: 宋体, 新宋体, sans-serif;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all .5s linear;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover {
+    background: #cc8665;
+    color: #2b1055;
+}
+
+header ul li.active {
+    background:#cc8665;
+    color: #2b1055;
+}
+a:link,a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+#container{
+    width: 1200px; padding: auto;
+    margin: 0 auto; text-align: center;
+}
+img{
+    width: 1028px; height: 668px;
+}
+.h_1{
+	font-size: 1.3em;
+	color: #FF6537;
+}
+h1,.h_2{
+	color:#FCFCEE;
+	text-shadow: 1px 1px 2px #666666;
+}
+nav{
+	width: 1200px;
+	height: 350px;
+	margin-top:70px;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: -6px;
+	text-align: center;
+	height: 330px;
+}
+nav ul{
+	margin-left: -34.5px;
+}
+/*设置列表对齐并拢*/
+nav ul li img{
+	width:401px;
+	height: 330px;
+}
+nav ul li a{
+	font-size: 2em;
+	font-weight: 700;
+	color:#fff;
+	line-height: 2.8em;
+	text-decoration: none;	
+}
+.opword{
+	display: inline-block;
+	background-color: rgba(205,202,202,0.5);
+	width:401px;
+	height: 100px;
+	position: relative;
+	top:-230px;
+}
+/*设置在图片上的透明背景加文字*/
+nav ul li a:hover img{
+	transform: scale(1,1.01);
+}
+nav ul li a:hover{
+	font-size: 2.2em;
+}
+body .shell-main-header {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    margin-bottom: 150px;
+  }
+  
+  body .shell-main-header-left {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(95, 95, 95, 0.5);
+    background-color: rgb(231, 227, 225);
+    overflow: hidden;
+  }
+  body .shell-main-header-left-top span {
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.2);
+    -webkit-text-stroke-color: #55d4d8;
+    -webkit-text-stroke-width: 1px;
+    margin-left: 20px;
+    font: 600 40px '';
+  }
+  body .shell-main-header-left-bottom {
+    width: 85%;
+    height: auto;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.2);
+    -webkit-text-stroke-color: #0c0e0d;
+    -webkit-text-stroke-width: 1px;
+  }
+  body .shell-main-header-left::after {
+    content: '';
+    width: 200px;
+    height: 15px;
+    background-color: #8ddff8;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  body .shell-main-header-left::before {
+    content: '';
+    width: 250px;
+    height: 250px;
+    border: 20px solid rgba(0, 255, 255, 0.3);
+    position: absolute;
+    bottom: -30px;
+    left: -140px;
+    border-radius: 10px;
+    transform: rotate(30deg);
+    animation: transform 4s infinite;
+  }
+  @keyframes transform {
+    0% {
+      transform: rotate(30deg) translate(0);
+    }
+  
+    50% {
+      transform: rotate(40deg) translate(10px);
+    }
+  
+    100% {
+      transform: rotate(30deg) translate(0px);
+    }
+  }
+  body .shell-main-header-right {
+    width: 40%;
+    height: 95%;
+    background-size: cover;
+    background-image: url("04.png");
+    border: 5px solid #000;
+  }
+
